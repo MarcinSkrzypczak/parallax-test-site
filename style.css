@@ -1,0 +1,133 @@
+html{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.box{
+  width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+
+.toRight{
+  position: absolute;
+  right: 0;
+}
+
+.title{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 60px;
+  z-index: 999;
+  position: absolute;
+}
+
+.copy{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 2em;
+  position: absolute;
+}
+
+.parallax-group{
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100vh;
+}
+
+.break{
+  height: 15vh;
+}
+
+/*HOME*/
+
+h1.main-title{
+  -webkit-transform: translateZ(-0.5px) scale(1.5);
+  transform: translateZ(-0.5px) scale(1.5);
+  position: absolute;
+  top: 20%;
+  font-weight: 900;
+  font-size: 160px;
+  line-height: 1em;
+}
+
+img.first-img{
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/*ABOUT ME*/
+
+p.aboutmeText{
+  -webkit-transform: translateZ(-0.1px) scale(1.1);
+  transform: translateZ(-0.1px) scale(1.1);
+  top: 20%;
+  width: 70%;
+  left: 0;
+}
+
+h2.aboutme{
+  top: 30%;
+}
+
+/*WORKS*/
+
+h2.works{
+  top: 30%;
+}
+
+.photo{
+  width: 300px;
+  position: absolute;
+}
+
+.photo:last-of-type{
+  width: 400px;
+}
+
+.photo_1{
+  -webkit-transform: translateZ(-0.2px) scale(1.5);
+  transform: translateZ(-0.2px) scale(1.5);
+  top: 20%;
+  left: 20%;
+}
+
+.photo_2{
+  -webkit-transform: translateZ(-0.4px) scale(1.4);
+  transform: translateZ(-0.4px) scale(1.4);
+  top: 10%;
+  left: 60%;
+}
+
+.photo_3{
+  -webkit-transform: translateZ(-0.1px) scale(1.4);
+  transform: translateZ(-0.1px) scale(1.4);
+  top: 70%;
+}
+
+/*CONTACT*/
+
+h2.contact{
+  top: 20%;
+}
+
+p.contactText {
+  -webkit-transform: translateZ(-0.1px) scale(1.1);
+  transform: translateZ(-0.1px) scale(1.1);
+  top: 20%;
+  width: 70%;
+  left: 30%;
+}
